@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Page</title>
+    <style>
+        /* Reset styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .nav-item:hover {
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .nav-icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <a href="#st-joseph" class="nav-item">
+            <span class="nav-icon">📺</span> St Joseph’s
+        </a>
+        <a href="#sta" class="nav-item">
+            <span class="nav-icon">⛰️</span> STA
+        </a>
+        <a href="#trinity" class="nav-item">
+            <span class="nav-icon">🐢</span> Trinity
+        </a>
+        <a href="#jpii" class="nav-item">
+            <span class="nav-icon">🏠</span> JPII
+        </a>
+    </div>
+</body>
+</html>
