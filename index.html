@@ -46,6 +46,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            cursor: pointer;
         }
 
         .nav-item:hover {
@@ -58,21 +59,27 @@
             margin-bottom: 8px; /* Space between icon and text */
         }
     </style>
+    <script>
+        // JavaScript function to open links in a new window
+        function openInWindow(url) {
+            window.open(url, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        }
+    </script>
 </head>
 <body>
     <div class="nav-container">
-        <a href="https://www.notion.so/kanesprogram/St-Josephs-1514b8add71480a0b340ed78a72368cc?pvs=4" class="nav-item" target="_blank">
+        <div class="nav-item" onclick="openInWindow('https://www.notion.so/kanesprogram/St-Josephs-1514b8add71480a0b340ed78a72368cc?pvs=4')">
             <span class="nav-icon">📺</span> St Joseph’s
-        </a>
-        <a href="https://www.notion.so/kanesprogram/STA-1514b8add714802c97f2f06bc435956c?pvs=4" class="nav-item" target="_blank">
+        </div>
+        <div class="nav-item" onclick="openInWindow('https://www.notion.so/kanesprogram/STA-1514b8add714802c97f2f06bc435956c?pvs=4')">
             <span class="nav-icon">⛰️</span> STA
-        </a>
-        <a href="https://www.notion.so/kanesprogram/Trinity-1514b8add71480f1ba5ef731b5617266?pvs=4" class="nav-item" target="_blank">
+        </div>
+        <div class="nav-item" onclick="openInWindow('https://www.notion.so/kanesprogram/Trinity-1514b8add71480f1ba5ef731b5617266?pvs=4')">
             <span class="nav-icon">🐢</span> Trinity
-        </a>
-        <a href="https://www.notion.so/kanesprogram/JPII-1514b8add714802d9e0afc0a61906cde?pvs=4" class="nav-item" target="_blank">
+        </div>
+        <div class="nav-item" onclick="openInWindow('https://www.notion.so/kanesprogram/JPII-1514b8add714802d9e0afc0a61906cde?pvs=4')">
             <span class="nav-icon">🏠</span> JPII
-        </a>
+        </div>
     </div>
 </body>
 </html>
